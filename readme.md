@@ -1,6 +1,6 @@
 # Node.js File System Server
 
-This is a simple Node.js server that handles HTTP requests to manage a list of products stored in a JSON file.
+This is a simple Node.js server (written in TypeScript) that handles HTTP requests to manage a list of products stored in a JSON file.
 
 ## Features
 
@@ -21,33 +21,46 @@ This is a simple Node.js server that handles HTTP requests to manage a list of p
 ### Prerequisites
 
 - Node.js installed on your machine.
+- TypeScript installed globally or as a dev dependency.
 
 ### Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/AbanobRafik/FileSystem-Nodejs.git
     ```
+
 2. Navigate to the project directory:
     ```sh
-    cd your-repo-name
+    cd FileSystem-Nodejs
     ```
-3. Install the dependencies:
+
+3. Install dependencies (if applicable):
     ```sh
     npm install
+    ```
+
+4. Compile TypeScript:
+    ```sh
+    tsc
     ```
 
 ### Running the Server
 
 1. Start the server:
     ```sh
-    node src/index.js
+    node dist/index.js
     ```
+    > If using `ts-node`, you can run it directly with:
+    ```sh
+    npx ts-node index.ts
+    ```
+
 2. Open your browser and navigate to `http://localhost:5000`.
 
 ### Project Structure
 
-- `src/index.js`: The main server file.
+- `index.ts`: The main server file written in TypeScript.
 - `data/products.json`: The JSON file that stores the list of products.
 
 ## Usage
